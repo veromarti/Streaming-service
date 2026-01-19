@@ -1,0 +1,102 @@
+/* ==============================
+    ROOT VARIABLES (Global Styles)
+============================== */
+
+:root {
+--font-main: "Sintony", sans-serif;
+--font-regular: 400;
+--font-bold: 700;
+}
+
+/* ==============================
+    RESET & BASE STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    font-weight: var(--font-regular);
+    text-decoration: none;
+}
+
+h2,h3,h4,h5{
+    font-weight: var(--font-bold);
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0.4turn,#051e36, #00284d, #2e0e5a, #7A1363);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    color: #FFFF;
+    font-size: larger;
+    align-items: center;
+    padding: 3%;
+}
+
+header img{
+    height: 60px;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFF;
+}
+
+main section{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.circle-btn {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px, solid, #d53a9d;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+    .circle-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.circle-btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}

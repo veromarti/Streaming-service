@@ -18,6 +18,16 @@ function userLogin(){
     } 
 
     if (user.email === loginEmail || user.password === loginPassword) {
+        const userProfiles = {
+            email: loginEmail,
+            password: loginPassword,
+            profiles: [
+                { id: 1, name: 'Vero' },
+                { id: 2, name: 'Zoze' },
+                { id: 3, name: 'Family' }
+            ],
+            favorites: {}};
+        localStorage.setItem('user', JSON.stringify(userProfiles));
         sessionStorage.setItem('loggedUser', loginEmail);
         window.location.href = 'profiles.html';
     }
