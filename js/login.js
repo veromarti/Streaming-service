@@ -4,7 +4,7 @@ function userLogin(){
     const loginEmail = document.getElementById('loginEmail').value;
     const loginPassword = document.getElementById('loginPassword').value;
     const user = JSON.parse(localStorage.getItem('user')) || [];
-    const currentUser = user.find(u => u.email === loginEmail && u.password === loginPassword);
+    const currentUser = user.email === loginEmail && user.password === loginPassword;
     const error = document.getElementById('errorMessage');
 
     if (!loginEmail || !loginPassword) {
@@ -17,8 +17,8 @@ function userLogin(){
         return;
     } 
 
-    if (currentUser.email === loginEmail || currentUser.password === loginPassword) {
-        sessionStorage.setItem('loggedUser', email);
+    if (user.email === loginEmail || user.password === loginPassword) {
+        sessionStorage.setItem('loggedUser', loginEmail);
         window.location.href = 'profiles.html';
     }
 }

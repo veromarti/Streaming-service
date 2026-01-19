@@ -3,16 +3,6 @@
 ============================== */
 
 :root {
-/* --primary: #28CB8B;
---secondary: #263238;
---neutral_dark: #263238;
---neutral_light: #F5F7FA;
---neutral_white: #FFFF;
---neutral_Dgrey: #4D4D4D;
---neutral_grey:#717171;
---main_text:#18191F;
---brand_primary:#4CAF4F;
---secondary-gray:#18191F; */
 --font-main: "Sintony", sans-serif;
 --font-regular: 400;
 --font-bold: 700;
@@ -20,7 +10,7 @@
 
 
 /* ==============================
-       RESET & BASE STYLES
+    RESET & BASE STYLES
 ============================== */
 
 * {
@@ -72,10 +62,9 @@ nav a{
 header img{
     height: 40px;
     display: flex;
-    /* align-self: center; */
 }
 
-nav .sign-in{
+nav .nav-link{
     margin-top: 6px;
 }
 
@@ -127,23 +116,3 @@ input:not(:placeholder-shown) {
     font-weight: var(--font-bold);
     cursor: pointer;
 }
-
-footer{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20%;
-}
-
-footer nav a{
-    color: #FFFF;
-}
-
