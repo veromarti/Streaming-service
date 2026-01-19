@@ -1,0 +1,80 @@
+/* ==============================
+    ROOT VARIABLES (Global Styles)
+============================== */
+
+:root {
+--primary: #28CB8B;
+--secondary: #263238;
+--neutral_dark: #263238;
+--neutral_light: #F5F7FA;
+--neutral_white: #FFFF;
+--neutral_Dgrey: #4D4D4D;
+--neutral_grey:#717171;
+--main_text:#18191F;
+--brand_primary:#4CAF4F;
+--secondary-gray:#18191F;
+--font-main: "Sintony", sans-serif;
+--font-regular: 400;
+--font-bold: 700;
+}
+
+
+/* ==============================
+       RESET & BASE STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    font-weight: var(--font-regular);
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: var(--font-bold);
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0.25turn, #9A35EF, #4B00C4, #4176D6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+footer nav a{
+    color: #FFFF;
+}
+
