@@ -44,19 +44,46 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0.25turn, #9A35EF, #4B00C4, #4176D6);
+    background: linear-gradient(0.25turn, #00305C, #40137A);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+header nav{
+    width: 100%;
+    height: 10VH;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    color: #FFFF;
+}
+
+header img{
+    height: 40px;
+    display: flex;
+    align-self: center;
 }
 
 main{
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #FFFF;
 }
 
 footer{

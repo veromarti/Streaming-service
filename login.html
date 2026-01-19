@@ -26,22 +26,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
+    
+    <header>
+        <nav>
+            <a href="login.html"><img src="assets/media/logo.svg" alt=""></a>
+            <a href="register.html">Sign-in</a>
+        </nav>
+    </header>
+    <main> 
+        <h3>Login</h3>
 
-    <h1>Login</h1>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email">
+            <br><br>
 
-    <form id="loginForm">
-        <input type="email" id="loginEmail" placeholder="Email">
-        <br><br>
+            <input type="password" id="loginPassword" placeholder="Password">
+            <br><br>
 
-        <input type="password" id="loginPassword" placeholder="Password">
-        <br><br>
+            <button type="submit">Login</button>
+        </form>
 
-        <button type="submit">Login</button>
-    </form>
-
-    <p id="errorMessage"></p>
+        <p id="errorMessage"></p>
+    </main>
 
     <script src="js/login.js"></script>
 </body>
