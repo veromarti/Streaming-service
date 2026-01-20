@@ -1,0 +1,270 @@
+/* ==============================
+    ROOT VARIABLES (Global Styles)
+============================== */
+
+:root {
+--font-main: "Sintony", sans-serif;
+--font-regular: 400;
+--font-bold: 700;
+}
+
+
+/* ==============================
+    RESET & BASE STYLES
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    font-weight: var(--font-regular);
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: var(--font-bold);
+}
+
+html{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 830px;
+}
+
+header .cover{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+header .info{
+    position: absolute;
+    top:420px;
+    left:3%;
+}
+
+header .header-nav{
+    width: 100%;
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+
+.header-nav .action{
+    width: 30%;
+    display: flex;
+    gap: 10%;
+    height: 20px;
+}
+
+.header-nav .logo{
+    width: 40%;
+    display: flex;
+    align-self: center;
+    height: 40px;
+}
+
+.header-nav .profile-item{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    justify-content: flex-end;
+    color: #fff;
+    position: relative;
+}
+
+.circle-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px, solid, #d53a9d;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.circle-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+main{
+    width: 100%;
+    background: linear-gradient(0.25turn, #00305C, #40137A);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+main .drop-shadow{
+    background: linear-gradient( #000, rgba(0, 0, 0, 0));
+    height: 100px;
+}
+
+main .catalogue{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+h3{
+    margin-left: 71px;
+    margin-bottom: 20px;
+}
+
+.catalogContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px; 
+}
+
+.catalogContainer .card{
+    width: 200px;           
+    height: 420px;
+    background-color: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .card-img-top{
+    width: 100%;
+    height: 300px;          
+    object-fit: cover;
+}
+
+.card-body div{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-body button{
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 40px;
+}
+
+/* main section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-between;    
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+/* header nav{
+    width: 100%;
+    height: 10VH;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: #FFFF;
+}
+
+header img{
+    height: 40px;
+    display: flex;
+}
+
+nav .nav-link{
+    margin-top: 6px;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFF;
+}
+
+main .container{
+    border: solid #00305C;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 3%;
+    margin-top: 3%;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container input{
+    border-width: 1px;
+    background-color: rgb(0, 48, 92, 0.2);
+    border-radius: 10px;
+    width:380px;
+    height: 46px;
+    padding: 14px 12px;
+}
+
+input:focus {
+    background-color: rgb(232,240,254);
+    outline: none;
+}
+
+input:not(:placeholder-shown) {
+    background-color: rgb(232,240,254);
+}
+
+.container button{
+    padding:3%;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: var(--font-bold);
+    cursor: pointer;
+} */

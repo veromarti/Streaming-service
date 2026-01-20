@@ -6,7 +6,6 @@ if (!loggedEmail) {
 
 const user = JSON.parse(localStorage.getItem('user')) || [];
 const currentUser = user.email;
-console.log(user.profiles)
 user.profiles.forEach((element) => console.log(element.name));
 const container = document.getElementById('profilesContainer')
 let cont = 1;
@@ -40,5 +39,4 @@ function selectProfile(profile){
     sessionStorage.setItem('activeProfile', JSON.stringify(profile));
     window.location.href = 'home.html';
 
-    
 }
