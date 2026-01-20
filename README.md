@@ -106,9 +106,13 @@ The catalog is hardcoded as an array of movie objects.
 
 4. Register a user and start navigating the app
 
-You can also access the following link: https://veromarti.github.io/Streaming-service/ 
-
 No additional dependencies are required.
+
+# Deployment
+
+This project can be deployed using GitHub Pages through the following link:
+https://veromarti.github.io/Streaming-service/ 
+
 
 ## Branching and Commit Strategy
 
@@ -141,3 +145,9 @@ No additional dependencies are required.
 - Google Fonts
 
 - Figma (https://www.figma.com/design/xkT0vDtOwQxvWcFgJk840U/HBO-MAX-Clone--Community-?node-id=19-71&t=HZ94DNMMznMGvzDr-0)
+
+## Author Information
+
+Full Name: Veronica Martinez Cadavid
+
+Clan: Turing
