@@ -88,6 +88,7 @@ movieCatalog.forEach((movie) => {
         addToFavorites(movie);
         img.src = '/assets/media/filled_like.svg';
         favs.push(movie);
+        activeProfile.favorites = favs;
         sessionStorage.setItem('activeProfile', JSON.stringify(activeProfile));
     });
 

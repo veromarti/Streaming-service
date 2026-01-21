@@ -25,8 +25,7 @@ function userLogin(){
                 { id: 1, name: 'Vero' },
                 { id: 2, name: 'Zoze' },
                 { id: 3, name: 'Family' }
-            ],
-            favorites: {}};
+            ]};
         localStorage.setItem('user', JSON.stringify(userProfiles));
         sessionStorage.setItem('loggedUser', loginEmail);
         window.location.href = 'profiles.html';

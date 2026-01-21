@@ -36,6 +36,7 @@ user.profiles.forEach((profile) => {
 });
 
 function selectProfile(profile){
+    profile.favorites=[];
     sessionStorage.setItem('activeProfile', JSON.stringify(profile));
     window.location.href = 'home.html';
 
